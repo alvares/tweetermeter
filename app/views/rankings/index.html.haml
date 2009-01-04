@@ -2,3 +2,7 @@
   %label{ :for => 'search' } twitter username
   = text_field_tag 'user_id'
   = submit_tag 'Submit'
+
+  %div#rating
+    = render :partial => 'show', :locals => {:rating => @rating}
+
