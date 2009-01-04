@@ -1,0 +1,13 @@
+setup: &setup
+  login:
+  password:
+
+development:
+  login:
+  password:
+
+test:
+  <<: *setup
+
+production:
+  <<: *setup

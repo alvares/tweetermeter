@@ -1,0 +1,15 @@
+setup: &setup
+  adapter: sqlite3
+  timeout: 5000
+
+development:
+  <<: *setup
+  database: db/development.sqlite3
+
+test:
+  <<: *setup
+  database: db/test.sqlite3
+
+production:
+  <<: *setup
+  database: db/production.sqlite3
