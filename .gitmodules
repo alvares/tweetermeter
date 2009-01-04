@@ -1,0 +1,12 @@
+[submodule "vendor/plugins/rspec"]
+	path = vendor/plugins/rspec
+	url = git://github.com/dchelimsky/rspec.git
+[submodule "vendor/plugins/rspec-rails"]
+	path = vendor/plugins/rspec-rails
+	url = git://github.com/dchelimsky/rspec-rails.git
+[submodule "vendor/plugins/keyword_prospector"]
+	path = vendor/plugins/keyword_prospector
+	url = git://github.com/latimes/keyword_prospector.git
+[submodule "vendor/rails"]
+	path = vendor/rails
+	url = git://github.com/rails/rails.git
