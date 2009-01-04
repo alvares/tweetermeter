@@ -1,13 +1,11 @@
-setup: &setup
-  login:
-  password:
+setup:
+  <%= YAML.load(File.read(File.join(ENV['HOME'], '.twitter.yml'))) %>
 
 development:
-  login:
-  password:
+  setup
 
 test:
-  <<: *setup
+  setup
 
 production:
-  <<: *setup
+  setup

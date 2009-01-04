@@ -5,7 +5,7 @@ def twitter_client_configuration_file
 end
 
 def twitter_client_configuration
-  Twitter::Client.from_config(twitter_client_configuration_file)
+  Twitter::Client.from_config(twitter_client_configuration_file, Rails.env)
 end
 
 ::TwitterClient = twitter_client_configuration
