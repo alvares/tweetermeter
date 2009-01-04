@@ -20,7 +20,7 @@ Rails::Initializer.run do |config|
   config.gem 'json', :version => '1.1.3'
   config.gem 'rspec', :version => '1.1.11', :lib => 'spec'
   config.gem 'rack', :version => '0.4.0'
-  
+  config.gem 'hoe', :version => '1.8.2'
   ##
   # Make Time.zone default to the specified zone, and make Active Record store time values
   # in the database in UTC, and return them converted to the specified local zone.
