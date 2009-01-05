@@ -4,7 +4,7 @@
     %title= h yield(:title) || "TweeterMeter::CurseRating"
     
     - bundle do 
-      = stylesheet_link_tag :main
+      = stylesheet_link_tag 'main'
       = javascript_include_tag :common
     = stylesheet_link_tag 'http://yui.yahooapis.com/2.5.2/build/reset-fonts-grids/reset-fonts-grids.css'
     = yield(:head)
