@@ -1,0 +1,3 @@
+page.insert_html :bottom, :rating, :partial => 'show', :object => @rating
+page.visual_effect :appear, :rating
+page.visual_effect :highlight, :rating

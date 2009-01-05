@@ -1,7 +1,18 @@
-- form_tag root_path do
-  %label{ :for => 'search' } twitter username
-  = text_field_tag 'user_id'
-  = submit_tag 'Submit'
+:javascript 
+  $(function() {
+    $('label.pre').labelOver('over');
+  })
 
-  %div#rating
-    = render :partial => 'show', :locals => {:rating => @rating}
+#doc
+  #form
+    - form_remote_tag :url => rankings_path do
+      %fieldset
+        %legend Twitter
+        .label
+          %label.pre{:for => 'user_id'} Twitter Username
+          = text_field_tag 'user_id', nil, :name => 'user_id', :id => 'user_id'
+        
+        %div
+          = submit_tag 'Submit'
+        .clear
+  #rating
