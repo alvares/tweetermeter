@@ -1,7 +1,5 @@
 ##
-# gem sources -a http://gems.github.com
-# sudo gem install fs-fs_vlad
-# sudo gem install retr0h-fs_vlad
+# sudo gem install retr0h-fs_vlad -s http://gems.github.com
 
 begin
   require 'vlad'
