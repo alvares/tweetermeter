@@ -2,13 +2,11 @@
   :rating:      G
   :heading:     General Audiences
   :info:        All ages admitted.
-  :description: Test Descr.
 
 :pg:
   :rating:      PG
   :heading:     Parental Guidance Suggested
   :info:        Some material may not be suitable for children.
-  :description: Test Descr.
 
 :pg_13:
   :rating:      PG-13
@@ -20,10 +18,8 @@
   :rating:      R
   :heading:     Restricted
   :info:        Under 17 requires accompanying parent or adult guardian.
-  :description: Test Descr.
 
 :nc_17:
   :rating:      NC-17
   :heading:     No One 17 and Under Admitted
   :info:        Crude and sexual humor, language and a brief drug reference.
-  :description: Test Descr.

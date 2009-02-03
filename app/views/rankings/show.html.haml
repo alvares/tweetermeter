@@ -16,9 +16,10 @@
         %td= @rating[:heading].upcase
       %tr
         %td.small{:colspan => '2'}= @rating[:info]
-      %tr
-        %td{:colspan => '2'}
-          - description = @rating[:description].upcase.split(/\s+/)
-          %div= description[0..((description.size / 2) -1)].join(" ")
-          = description[(description.size / 2)..-1].join(" ")
+      - if @rating[:description]
+        %tr
+          %td{:colspan => '2'}
+            - description = @rating[:description].upcase.split(/\s+/)
+            %div= description[0..((description.size / 2) -1)].join(" ")
+            = description[(description.size / 2)..-1].join(" ")
     .right &reg;
