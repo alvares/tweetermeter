@@ -1,0 +1,24 @@
+#rating
+  %div
+    THE FOLLOWING
+    %strong
+      TWITTER ACCOUNT
+    HAS BEEN APPROVED FOR
+  %div
+    %strong
+      ALL AUDIENCES
+  %div BY THE CurseRating OF TweeterMeter
+  .box
+    %div THIS TWITTER ACCOUNT HAS BEEN RATED
+    %table
+      %tr     
+        %td.rating= @rating[:rating]
+        %td= @rating[:heading].upcase
+      %tr
+        %td.small{:colspan => '2'}= @rating[:info]
+      %tr
+        %td{:colspan => '2'}
+          - description = @rating[:description].upcase.split(/\s+/)
+          %div= description[0..((description.size / 2) -1)].join(" ")
+          = description[(description.size / 2)..-1].join(" ")
+    .right &reg;

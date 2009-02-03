@@ -1,0 +1,11 @@
+#form
+  - form_tag :url => rankings_path, :method => 'post' do
+    %fieldset
+      %legend Twitter
+      .label
+        %label.pre{:for => 'user_id'} Twitter Username
+        = text_field_tag 'user_id', nil, :name => 'user_id', :id => 'user_id'
+      
+      %div
+        = submit_tag 'Submit'
+      .clear

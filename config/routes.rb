@@ -1,4 +1,4 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resource :rankings
+  map.resources :rankings
   map.root :controller => 'rankings'
 end
